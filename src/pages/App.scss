@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'main-font';
+  src: url('https://munchtzb.github.io/fonts/Attentica%204F%20UltraLight.ttf');
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 608070 */
+  src: url('//at.alicdn.com/t/font_608070_x474e9po7ixxn7b9.eot');
+  src: url('//at.alicdn.com/t/font_608070_x474e9po7ixxn7b9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_608070_x474e9po7ixxn7b9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_608070_x474e9po7ixxn7b9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_608070_x474e9po7ixxn7b9.svg#iconfont') format('svg');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+html,
+body,
+#daygram {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  // 设置root font-size，全局1rem为设计图上的100px
+  font-size: calc(100vw / 7.5);
+  user-select: none;
+}
+
+body {
+  overflow: hidden;
+  background-color: #F2F1EE;
+  color: #343433;
+}
+
+.g-ico {
+  font-family: iconfont !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.g-main-font {
+  font-family: main-font;
+}
+
+.g-fullscreen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.g-text-center {
+  text-align: center
+}
+
+.g-touchable-opacity {
+  opacity: .7;
+}
+
+.g-hide {
+  display: none !important;
+}
+
+.g-flexbox {
+  display: flex;  
+}
+
+.g-flex {
+  flex: 1;
+  width: 0.1px;
+}
+
+.g-align-center {
+  align-items: center;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.m-selector {
+  display: inline-block;
+  width: .8rem;
+  height: .8rem;
+  margin-top: 0.3rem;
+  line-height: 0.87rem;
+  border-radius: .4rem;
+  font-size: .48rem;
+  margin-left: 0.16rem;
+  color: #F2F1EE;
+  background-color: #A5A7A3;
+  transition: .5s background-color;
+
+  &.on {
+    background-color: #333435;
+  }
+
+  &.disabled {
+    background-color: #CCCDC7;
+  }
+}

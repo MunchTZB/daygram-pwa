@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Daygram</title>
+  <script>
+    document.addEventListener('touchmove', function(ev) {
+      if (ev.target.tagName === 'TEXTAREA' || ev.target.tagName === 'IFRAME') {
+        console.log(ev);
+        return;
+      }
+      ev.preventDefault();
+    })
+  </script>
+</head>
+<body>
+  <div id="daygram" class="g-fullscreen"></div>
+  <!-- <div style="position: absolute; bottom: 0; height: 258px; background: #000">123</div> -->
+  <script src="./src/index.jsx"></script>
+</body>
+</html>

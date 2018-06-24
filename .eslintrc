@@ -1,0 +1,30 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "no-param-reassign": "off",
+    "no-restricted-properties": "off",
+    "max-len": "off",
+    "react/no-find-dom-node": "off",
+    "no-trailing-spaces": "off",
+    "no-mixed-operators": "off",
+    "no-underscore-dangle": "off",
+    "one-var": "off",
+    "comma-dangle":"off",
+    "prefer-destructuring": "off",
+    "no-plusplus": "off",
+    "no-restricted-globals": "off",
+    "react/prefer-stateless-function": "off",
+    "react/forbid-prop-types": "off",
+    "react/prop-types": "off",
+    "react/jsx-closing-bracket-location": [2, "after-props"],
+    "no-nested-ternary": "off",
+    "class-methods-use-this": "off",
+    "no-return-assign": "off",
+    "react/no-unused-prop-types": "off",
+    "react/sort-comp": "off"
+  }
+}

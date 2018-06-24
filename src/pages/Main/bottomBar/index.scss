@@ -1,0 +1,81 @@
+.bottom-bar {
+  font-family: main-font;  
+  height: 1.4rem;
+  position: relative;
+
+  .options {
+    position: absolute;
+    line-height: 1.4rem;
+    font-size: 0.5rem;
+  
+    &__month {
+      width: 1.48rem;
+      letter-spacing: .01rem;
+    }
+  
+    &__year {
+      width: 0.88rem;
+    }
+  
+    &__block {
+      margin-top: 0.5rem;      
+      width: 0.1rem;
+      height: 0.28rem;
+      background-color: #454344;      
+    }
+  
+    &__split {
+      margin-top: 0.51rem;
+      height: 0.25rem;
+      width: 1px;
+      background-color: #454344;
+    }
+  }
+
+  .month-selector {
+    height: 100%;
+    width: 11.52rem;
+
+    &__item {
+      display: inline-block;
+      width: .8rem;
+      height: .8rem;
+      margin-top: 0.3rem;
+      line-height: 0.87rem;
+      border-radius: .4rem;
+      font-size: .48rem;
+      margin-left: 0.16rem;
+      color: #F2F1EE;
+      background-color: #A5A7A3;
+      transition: .5s background-color;
+
+      &.on {
+        background-color: #333435;
+      }
+
+      &.disabled {
+        background-color: #CCCDC7;
+      }
+    }
+  }
+
+  .year-selector {
+    height: 100%;
+
+    &__item {
+      height: .8rem;
+      line-height: 0.8rem;   
+      font-size: 0.48rem;         
+      color: #A5A7A3;
+      transition: .5s color;      
+
+      & + .year-selector__item {
+        margin-left: 0.44rem;
+      }
+
+      &.on {
+        color: #333435;
+      }
+    }
+  }
+}

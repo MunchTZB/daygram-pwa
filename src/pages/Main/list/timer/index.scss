@@ -1,0 +1,30 @@
+.timer {
+  font-family: sans-serif;
+  transform: translateZ(0);
+  position: absolute;
+  top: -52px;
+  color: #4C4D4E;
+  font-weight: 100;
+  font-size: 0.3rem;
+
+  &__date,
+  &__clock {
+    font-weight: bold;
+  }
+
+  &__date {
+    color: #51534F;
+  }
+
+  &__clock {
+    color: #9C9D97;
+  }
+
+  &__split {
+    display: inline-block;
+    height: 0.22rem;
+    width: 0.04rem;
+    background-color: #C8C9C3;
+    margin: 0 .14rem;
+  }
+}

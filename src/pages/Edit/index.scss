@@ -1,0 +1,64 @@
+.edit {
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(-45deg, #343433 0, #343433 10%, #E7E5E9 0, #E7E5E9 50%);
+  // background-image: repeating-linear-gradient(-45deg, #343433 0, #343433 2px, #E7E5E9 2px, #E7E5E9 10px);
+
+  &__content {
+    position: absolute;
+    top: 0.15rem;
+    bottom: 0.15rem;
+    left: 0.15rem;
+    right: 0.15rem;
+    flex-direction: column;
+    border: solid #272727 2px;
+    background-color: #F2F1ED;
+  }
+
+  &__title {
+    font-size: 0.56rem;
+    line-height: 0.46rem;
+    margin: .55rem 0 .37rem;
+  }
+
+  &__weekday {
+    &.sunday {
+      color: #AD4345;
+    }
+  }
+
+  &__date-split {
+    margin: 0 .12rem;
+  }
+
+  &__split {
+    display: inline-block;
+    height: 2px;
+    width: 5rem;
+    background-color: #454545;
+  }
+
+  &__edit-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  &__textarea {
+    font-family: 'Times New Roman';
+    font-size: 0.26rem;
+    position: absolute;
+    padding: 0 .48rem;
+    border: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 1rem;
+    resize: none;
+    background-color: transparent;
+    outline: none;
+    color: #333435;
+  }
+
+  &__options {
+    position: absolute;
+  }
+}

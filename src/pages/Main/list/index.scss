@@ -1,0 +1,26 @@
+.list {
+  flex: 1;
+  height: .1px;
+  overflow: hidden;
+
+  &__empty {
+    position: relative;
+    height: 0.8rem;
+  }
+
+  &__dot {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 8px;
+    width: 8px;
+    margin-left: -4px;
+    margin-top: -4px;
+    border-radius: 4px;
+    background-color: #52504D;
+
+    &.sunday {
+      background-color: #AD4345;
+    }
+  }
+}
